@@ -13,7 +13,7 @@ import java.util.*;
 @Service
 public class AirportService {
     @Autowired
-    private AirportRepository airportRepository;
+    private AirportRepository airportRepository = new AirportRepository();
 
     public void addAirport(Airport airport) {
         airportRepository.addAirport(airport);
