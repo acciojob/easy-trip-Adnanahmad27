@@ -61,7 +61,7 @@ public class AirportService {
         int cnt = 0;
         for(int flightId : flightPassengerList.keySet()){
             if(flightMap.get(flightId).getFlightDate().compareTo(date)==0){
-                if(flightMap.get(flightId).getFromCity().equals(airportMap.get(airportName)) || flightMap.get(flightId).getToCity().equals(airportMap.get(airportName))){
+                if(flightMap.get(flightId).getFromCity().equals(airportMap.get(airportName).getCity()) || flightMap.get(flightId).getToCity().equals(airportMap.get(airportName).getCity())){
                     cnt ++;
                 }
             }
