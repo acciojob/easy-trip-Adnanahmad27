@@ -62,7 +62,7 @@ public class AirportService {
         for(int flightId : flightPassengerList.keySet()){
             if(flightMap.get(flightId).getFlightDate().compareTo(date)==0){
                 if(flightMap.get(flightId).getFromCity().equals(airportMap.get(airportName)) || flightMap.get(flightId).getToCity().equals(airportMap.get(airportName))){
-                    cnt += flightPassengerList.get(flightId).size();
+                    cnt ++;
                 }
             }
         }
